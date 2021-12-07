@@ -895,6 +895,59 @@ p {
   fill: var(--white-text-color);
 }
 
+.container-subscribe {
+  display: block;
+  margin-left: 65px;
+  justify-content: center;
+}
+
+.subscribe {
+  display: inline-flex;
+  margin-bottom: 21px;
+
+  color: var(--white-text-color);
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.icon-send {
+  padding-left: 10px;
+  width: 24px;
+  height: 24px;
+  fill: var(--white-text-color);
+}
+
+.icon-send:hover,
+.icon-send:focus {
+  fill: var(--portfolio-overlay-color);
+}
+
+.auth-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input {
+  padding-left: 16px;
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  border-radius: 4px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: var(--footer-color);
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .address2 .address1:focus,
 .address1:hover,
 .address2:focus,
