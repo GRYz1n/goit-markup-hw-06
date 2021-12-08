@@ -577,6 +577,7 @@ textarea {
 
 .agreement-link {
   color: var(--accent-text-color);
+  text-decoration: underline;
 }
 
 /* -------------------BUTTON---------------------- */
