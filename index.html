@@ -47,19 +47,63 @@
             <div class="container h">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
                 <button type='button' class="button" data-modal-open>Заказать услугу</button>
+        
+                <div class="backdrop is-hidden" data-modal>
+                    <div class="modal">
+                        <form class="form client-form">
 
-                    <div class="backdrop is-hidden" data-modal>
-                        <div class="modal">
-                            <p class="backdrop-text">Lorem ipsum dolor</p>
-                            <button class="close-button" data-modal-close>
-                                <svg class="close-icon">
-                                    <use href="./images/svg/hero/defs.svg#icon-close-black"></use>
-                                </svg>
-                            </button>
-                        </div>
+                            <b class="form-header">Оставьте свои данные, мы вам перезвоним</b>
+                            
+                            <div class="form-field">
+                                <label class="form-label" for="name">Имя</label>
+                                <input class="form-input" type="text" name="name" id="name" placeholder=" ">
+                                    <span class="icon">
+                                        <svg class="icon-form svg-person">
+                                            <use href="./images/svg/modal/defs.svg#icon-person"></use>
+                                        </svg>
+                            </div>
+
+                            <div class="form-field">
+                                <label class="form-label" for="tel">Телефон</label>
+                                <input class="form-input" type="tel" name="tel" id="tel" placeholder=" ">
+                                    <span class="icon">
+                                        <svg class="icon-form svg-phone">
+                                            <use href="./images/svg/modal/defs.svg#icon-phone"></use>
+                                        </svg>
+                            </div>
+                            
+                            <div class="form-field">
+                                <label class="form-label" for="mail">Почта</label>
+                                <input class="form-input" type="email" name="mail" id="mail" placeholder=" ">
+                                    <span class="icon">
+                                        <svg class="icon-form svg-email">
+                                            <use href="./images/svg/modal/defs.svg#icon-email"></use>
+                                        </svg>
+                            </div>
+
+                            <div class="form-field">
+                                <label class="form-label" for="mail">Комментарий</label>
+                                <textarea class="comment-field" name="comment" id="comment" rows="10" placeholder="Введите текст"></textarea>
+                            </div>
+
+                                <input class="checkbox" type="checkbox" name="policy" id="policy">
+                                <label class="form-checkbox" for="policy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+
+                            <button class ="button form-button" type="submit">Отправить</button>
+
+                        </form>
+
+                        
+                        <button class="close-button" data-modal-close>
+                            <svg class="close-icon">
+                                <use href="./images/svg/hero/defs.svg#icon-close-black"></use>
+                            </svg>
+                        </button>
                     </div>
+                </div>
             </div>
             <script src="./js/modal.js"></script>
+            <script src="./js/send.js"></script>
         </section>
         
 
