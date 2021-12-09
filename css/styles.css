@@ -398,7 +398,7 @@ textarea {
   position: relative;
   padding: 40px;
 
-  /* outline: 1px solid tomato; */
+  outline: 1px solid tomato;
 }
 
 .form-label {
@@ -466,6 +466,10 @@ textarea {
   margin-bottom: 10px;
 }
 
+.form-field:last-child {
+  margin-bottom: 20px;
+}
+
 .form-field label {
   margin-bottom: 4px;
 }
@@ -495,6 +499,7 @@ textarea {
   box-sizing: border-box;
   border-radius: 4px;
   outline: none;
+  margin-bottom: 10px;
 }
 
 .comment-field::placeholder {
@@ -534,23 +539,23 @@ textarea {
 
 .icon-check {
   position: absolute;
-  display: block;
+
   width: 16px;
   height: 15px;
   background-color: var(--white-text-color);
-  border: 1px solid black;
+  border: 2px solid black;
   fill: var(--white-text-color);
-  bottom: 124px;
-  left: 52px;
+
+  bottom: 115px;
+  left: 45px;
+  cursor: pointer;
 }
 
 .form-checkbox {
   position: relative;
 
   display: inline-block;
-  margin-left: 36px;
-  margin-top: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 
   font-weight: 400;
   font-size: 14px;
@@ -559,11 +564,23 @@ textarea {
   letter-spacing: 0.03em;
 
   color: var(--gray-text-color);
+
+  cursor: pointer;
+}
+
+.form-checkbox:hover,
+.form-checkbox:focus {
+  color: var(--accent-text-color);
 }
 
 .checkbox:hover + .checkbox-icon,
 .checkbox:focus + .checkbox-icon {
-  border-color: var(--bg-color-effect);
+  border-color: var(--accent-text-color);
+}
+
+.icon-check:hover,
+.icon-check:focus {
+  color: #188ce8;
 }
 
 .button.form-button:hover,
@@ -1101,7 +1118,7 @@ textarea {
 
 .container-subscribe {
   display: block;
-  margin-left: 93px;
+  margin-left: 67px;
   justify-content: center;
 }
 
