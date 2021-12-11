@@ -361,6 +361,12 @@ p {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.close-button:hover,
+.close-button:focus {
+  border-color: var(--accent-text-color);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .close-icon:hover,
 .close-icon:focus {
   fill: var(--accent-text-color);
@@ -422,7 +428,8 @@ textarea {
   color: var(--primary-text-color);
 }
 
-.form-input:focus {
+.form-input:focus,
+.form-input:hover {
   border-color: var(--accent-text-color);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -446,7 +453,8 @@ textarea {
   height: 18px;
 }
 
-.form-input:focus + .icon {
+.form-input:focus + .icon,
+.form-input:hover + .icon {
   fill: var(--accent-text-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -497,7 +505,8 @@ textarea {
   color: var(--modal-grey-color);
 }
 
-.comment-field:focus {
+.comment-field:focus,
+.comment-field:hover {
   border-color: var(--accent-text-color);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -505,12 +514,10 @@ textarea {
 /* --------------checkbox---------------- */
 
 .form-checkbox {
-  /* position: relative;
-
-  display: inline-block; */
   display: flex;
   align-items: center;
   justify-content: center;
+
   margin-bottom: 20px;
   margin-top: 20px;
   margin-left: 10px;
@@ -530,6 +537,7 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
+
   width: 16px;
   height: 16px;
   border: 2px solid black;
@@ -539,11 +547,6 @@ textarea {
 
 .icon-check {
   fill: var(--background-white);
-}
-
-.modal-check:checked + .form-checkbox span {
-  background-color: var(--accent-text-color);
-  border: none;
 }
 
 /* --------- через before ----------- */
@@ -574,21 +577,21 @@ textarea {
   color: var(--accent-text-color);
 }
 
-.checkbox:hover + .checkbox-icon,
-.checkbox:focus + .checkbox-icon {
-  border-color: var(--accent-text-color);
-}
-
-.icon-check:hover,
-.icon-check:focus {
-  color: #188ce8;
-}
-
 .button.form-button:hover,
 .button.form-button:focus {
   background: gainsboro;
   color: var(--accent-text-color);
   box-shadow: var(--card-shadow);
+}
+
+.modal-check:focus + .form-checkbox span,
+.modal-check:hover + .form-checkbox span {
+  border-color: var(--accent-text-color);
+}
+
+.modal-check:checked + .form-checkbox span {
+  background-color: var(--accent-text-color);
+  border: none;
 }
 
 .agreement-link {
