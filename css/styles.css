@@ -297,7 +297,7 @@ li {
 
 	transform: translate(-50%, -50%) scale(1);
 
-	transition: transform 250ms, var(--timing);
+	transition: transform 250ms var(--timing);
 }
 
 .close__button {
