@@ -338,6 +338,38 @@ li {
 	transition: fill, color 250ms var(--timing);
 }
 
+/* -------------------FORM FIELD---------------------- */
+
+.form {
+	width: 600px;
+	outline: 1px solid rebeccapurple;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+}
+
+.form-field {
+	outline: 1px solid tomato;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+}
+
+.form-field label {
+	margin-bottom: 5px;
+}
+
+.form-field input {
+	margin: 0;
+	padding: 10px 20px;
+	border-radius: 3px;
+	border: 1px solid #2a2a2a;
+}
+
+.form-field input::placeholder {
+	color: #2a2a2a;
+}
+
 /* -------------------BUTTON---------------------- */
 
 .btn {
