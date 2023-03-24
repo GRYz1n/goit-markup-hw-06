@@ -51,15 +51,47 @@
 
                 <div class="backdrop is-hidden" data-modal>
                     <div class="modal">
+
                         <p class="backdrop__text">Leave your contacts and we will call you back</p>
+
                         <form class="form">
-                            <div class="form-field">
 
+                            <div class="form__field">
+                                <label class="form__label" for="name">Name</label>
+                                <input type="text" class="form__field input" placeholder="Name" name="user__name"
+                                    required minlength="3">
+                                <!-- <span class="icon">
+                                    <svg class="form__icon svg-person">
+                                        <use href=""></use>
+                                    </svg>
+                                </span> -->
+                            </div>
+                            <div class="form__field">
+                                <label class="form__label" for="tel">Phone</label>
+                                <input type="tel" class="form__field input" name="user_phone" required minlength="5"
+                                    pattern="[0-9{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx">
+                                <!-- <span class="icon">
+                                    <svg class="form__icon svg-person">
+                                        <use href=""></use>
+                                    </svg> -->
+                            </div>
+                            <div class="form__field">
+                                <label class="form__label" for="mail">Email</label>
+                                <input type="email" class="form__field input" name="user__email" required minlength="5">
+                                <!-- <span class="icon">
+                                    <svg class="form__icon svg-person">
+                                        <use href=""></use>
+                                    </svg> -->
+                            </div>
+                            <div class="form__field">
+                                <label class="form__label" for="mail">Comment</label>
+                                <textarea class="comment__field" name="comment" id="comment"
+                                    placeholder="Text input"></textarea>
+                            </div>
+                            <div class="form__btn">
+                                <button type="submit" class="btn btn--submit">Send</button>
                             </div>
 
-                            <div role="group">
-                                <input type="text">
-                            </div>
                         </form>
 
 
