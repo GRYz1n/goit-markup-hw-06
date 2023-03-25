@@ -278,10 +278,7 @@ li {
 	left: 50%;
 	border-radius: 4px;
 
-	width: 408px;
-	height: 576px;
-
-	padding: 72px 24px;
+	padding: 72px 24px 24px 24px;
 	text-align: center;
 
 	background-color: var(--backdrop-background);
@@ -376,7 +373,7 @@ textarea {
 	border-radius: 4px;
 }
 
-.form__field input::placeholder {
+/* .form__field input::placeholder {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.25;
@@ -384,7 +381,7 @@ textarea {
 	letter-spacing: 0.03em;
 
 	color: pink;
-}
+} */
 
 .comment__field {
 	width: 360px;
@@ -392,6 +389,22 @@ textarea {
 	margin-bottom: 16px;
 	color: rgba(117, 117, 117, 0.5);
 	border: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.form__field textarea {
+	padding: 8px 16px 8px 16px;
+}
+
+.form__check {
+	margin-bottom: 24px;
+}
+
+.form__check__desc {
+	font-size: 12px;
+	line-height: 1.33;
+	letter-spacing: 0.04em;
+
+	color: #757575;
 }
 
 /* -------------------BUTTON---------------------- */

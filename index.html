@@ -49,7 +49,7 @@
                 <h1 class="hero__title">Effective Solutions for Your Business</h1>
                 <button type="button" class="btn" data-modal-open>Order Service</button>
 
-                <div class="backdrop is-hidden" data-modal>
+                <div class="backdrop" data-modal>
                     <div class="modal">
 
                         <p class="backdrop__text">Leave your contacts and we will call you back</p>
@@ -58,8 +58,8 @@
 
                             <div class="form__field">
                                 <label class="form__label" for="name">Name</label>
-                                <input type="text" class="form__field input" placeholder="Name" name="user__name"
-                                    required minlength="3">
+                                <input type="text" class="form__field input" placeholder="" name="user__name" required
+                                    minlength="3" pattern="^[a-zA-Z-А-Я-а-я]+$">
                                 <!-- <span class="icon">
                                     <svg class="form__icon svg-person">
                                         <use href=""></use>
@@ -71,7 +71,7 @@
                                 <input type="tel" class="form__field input" name="user_phone" required minlength="5"
                                     pattern="[0-9{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx">
                                 <!-- <span class="icon">
-                                    <svg class="form__icon svg-person">
+                                    <svg class="form__icon svg-phone">
                                         <use href=""></use>
                                     </svg> -->
                             </div>
@@ -79,22 +79,22 @@
                                 <label class="form__label" for="mail">Email</label>
                                 <input type="email" class="form__field input" name="user__email" required minlength="5">
                                 <!-- <span class="icon">
-                                    <svg class="form__icon svg-person">
+                                    <svg class="form__icon svg-mail">
                                         <use href=""></use>
                                     </svg> -->
                             </div>
                             <div class="form__field">
                                 <label class="form__label" for="mail">Comment</label>
-                                <textarea class="comment__field" name="comment" id="comment"
-                                    placeholder="Text input"></textarea>
+                                <textarea class="comment__field" name="comment" placeholder="Text input"></textarea>
                             </div>
 
-                            <p>I accept the terms and conditions of the Privacy Policy</p>
+                            <input id="user__policy" type="checkbox" class="form__check">
+                            <label for="user__policy" class="form__check__desc">I accept the terms and conditions of the
+                                <a href="">Privacy Policy</a></label>
 
                             <div class="form__btn">
                                 <button type="submit" class="btn btn--submit">Send</button>
                             </div>
-
                         </form>
 
 
