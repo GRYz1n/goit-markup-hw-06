@@ -856,3 +856,50 @@ textarea {
 	width: 24px;
 	height: 24px;
 }
+
+.footer__subscribe {
+	margin-left: 80px;
+}
+
+.footer__field {
+	display: block;
+	color: rgba(255, 255, 255, 1);
+}
+
+.footer__field {
+	width: 264px;
+	height: 40px;
+
+	padding: 8px 16px 8px 16px;
+
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-radius: 4px;
+	background-color: var(--modal-overlay);
+}
+
+.footer__subscribe__text {
+	margin-bottom: 16px;
+
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	color: rgba(255, 255, 255, 1);
+}
+
+.form__subscribe {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.btn__subscribe {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 165px;
+	height: 40px;
+	margin-left: 24px;
+	padding: 8px 24px 8px 24px;
+}
