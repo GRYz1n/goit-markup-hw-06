@@ -446,6 +446,7 @@ textarea {
 	color: #757575;
 
 	margin-bottom: 24px;
+	transition: color 250ms var(--timing);
 }
 
 .form__check__desc::before {
@@ -457,6 +458,7 @@ textarea {
 	border-radius: 2px;
 	cursor: pointer;
 	margin-right: 8px;
+	transition: border-color 250ms var(--timing);
 }
 
 .form__check:checked + .form__check__desc::before {
