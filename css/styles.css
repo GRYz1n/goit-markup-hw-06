@@ -975,3 +975,10 @@ textarea {
 	margin-left: 24px;
 	padding: 8px 24px 8px 24px;
 }
+
+.icon__telegram {
+	margin-left: 16px;
+	fill: var(--accent);
+	width: 24px;
+	height: 24px;
+}
