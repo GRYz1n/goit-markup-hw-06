@@ -365,7 +365,7 @@ textarea {
 .form__field input {
 	height: 40px;
 	box-sizing: border-box;
-
+	font-size: 18px;
 	margin-bottom: 8px;
 	padding: 11px 38px 11px 38px;
 
@@ -392,10 +392,6 @@ textarea {
 	border-radius: 4px;
 }
 
-.form__field input {
-	font-size: 18px;
-}
-
 .form__field textarea {
 	font-size: 12px;
 	color: rgba(117, 117, 117, 0.5);
@@ -412,6 +408,30 @@ textarea {
 	letter-spacing: 0.04em;
 
 	color: #757575;
+}
+
+.icon {
+	position: absolute;
+	transform: translateY(115%);
+	left: 16px;
+	display: block;
+	width: 18px;
+	height: 24px;
+	background-size: contain;
+	fill: var(--dark);
+}
+
+.svg-person {
+	width: 18px;
+	height: 24px;
+}
+.svg-phone {
+	width: 18px;
+	height: 24px;
+}
+.svg-mail {
+	width: 18px;
+	height: 24px;
 }
 
 /* -------------------BUTTON---------------------- */
