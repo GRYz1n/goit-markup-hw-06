@@ -362,7 +362,7 @@ textarea {
 	/* outline: 1px solid pink; */
 }
 
-.form__field input {
+.form__field__input {
 	height: 40px;
 	box-sizing: border-box;
 	font-size: 18px;
@@ -373,15 +373,19 @@ textarea {
 	border-radius: 4px;
 }
 
-/* .form__field input::placeholder {
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 1.25;
+.form__field__input:focus,
+.form__field__input:hover {
+	outline: none;
+	border-color: var(--primary-brand);
+	transition: border-color 250ms var(--timing);
+}
 
-	letter-spacing: 0.03em;
-
-	color: pink;
-} */
+.form__field__input:focus + .icon,
+.form__field__input:hover + .icon {
+	outline: none;
+	fill: var(--primary-brand);
+	transition: fill 250ms var(--timing);
+}
 
 .comment__field {
 	width: 360px;
@@ -392,22 +396,17 @@ textarea {
 	border-radius: 4px;
 }
 
+.comment__field:focus,
+.comment__field:hover {
+	outline: none;
+	border-color: var(--primary-brand);
+	transition: border-color 250ms var(--timing);
+}
+
 .form__field textarea {
 	font-size: 12px;
 	color: rgba(117, 117, 117, 0.5);
 	padding: 8px 16px 8px 16px;
-}
-
-.form__check {
-	margin-bottom: 24px;
-}
-
-.form__check__desc {
-	font-size: 12px;
-	line-height: 1.33;
-	letter-spacing: 0.04em;
-
-	color: #757575;
 }
 
 .icon {
@@ -432,6 +431,18 @@ textarea {
 .svg-mail {
 	width: 18px;
 	height: 24px;
+}
+
+.form__check {
+	margin-bottom: 24px;
+}
+
+.form__check__desc {
+	font-size: 12px;
+	line-height: 1.33;
+	letter-spacing: 0.04em;
+
+	color: #757575;
 }
 
 /* -------------------BUTTON---------------------- */
