@@ -58,35 +58,37 @@
 
                             <div class="form__field">
                                 <label class="form__label" for="name">Name</label>
-                                <input type="text" class="form__field__input" placeholder="" name="user_name" id="name"
-                                    required minlength="3" pattern="^[a-zA-Z-А-Я-а-я]+$">
-                                <span class="icon">
-                                    <svg class="form__icon svg-person">
+                                <span class="icon__wrapper">
+                                    <input type="text" class="form__field__input" placeholder="" name="user_name"
+                                        id="name" required minlength="3" pattern="^[a-zA-Z-А-Я-а-я]+$">
+                                    <svg class="icon svg-person">
                                         <use href="./images/svg/modal/defs.svg#svg-person"></use>
                                     </svg>
                                 </span>
                             </div>
                             <div class="form__field">
                                 <label class="form__label" for="tel">Phone</label>
-                                <input type="tel" class="form__field__input" name="user_phone" id="tel" required
-                                    minlength="5" pattern="[0-9{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx">
-                                <span class="icon">
-                                    <svg class="form__icon svg-phone">
+                                <span class="icon__wrapper">
+                                    <input type="tel" class="form__field__input" name="user_phone" id="tel" required
+                                        minlength="5" pattern="[0-9{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                                        title="xxx-xxx-xx-xx">
+                                    <svg class="icon svg-phone">
                                         <use href="./images/svg/modal/defs.svg#svg-phone"></use>
                                     </svg>
                                 </span>
                             </div>
                             <div class="form__field">
                                 <label class="form__label" for="mail">Email</label>
-                                <input type="email" id="mail" class="form__field__input" name="user_email" required
-                                    minlength="5">
-                                <span class="icon">
-                                    <svg class="form__icon svg-mail">
+                                <span class="icon__wrapper">
+                                    <input type="email" id="mail" class="form__field__input" name="user_email" required
+                                        minlength="5">
+
+                                    <svg class="icon svg-mail">
                                         <use href="./images/svg/modal/defs.svg#svg-mail"></use>
                                     </svg>
                                 </span>
                             </div>
-                            <div class="form__field">
+                            <div class="form__field last">
                                 <label class="form__label" for="comment">Comment</label>
                                 <textarea class="comment__field" id="comment" name="user_comment"
                                     placeholder="Text input"></textarea>
@@ -98,9 +100,7 @@
                                 the&nbsp;
                                 <a href="" class="form__check__policy">Privacy Policy</a></label>
 
-                            <div class="form__btn">
-                                <button type="submit" class="btn btn--submit">Send</button>
-                            </div>
+                            <button type="submit" class="btn btn--submit">Send</button>
                         </form>
 
 
